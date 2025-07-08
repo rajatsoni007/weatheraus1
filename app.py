@@ -3,6 +3,7 @@ from flask import Flask, request, jsonify, app, url_for, render_template
 import numpy as np
 import pandas as pd
 
+
 app = Flask(__name__)
 model = pickle.load(open('random_forest_pipeline.pkl', 'rb'))
 
